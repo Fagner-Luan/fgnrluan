@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; /* Centralizar na tela */
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+p {
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #2196F3; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries para Responsividade (ajuste para suas necessidades!) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Navbar em coluna para telas menores */
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column; /* Conteúdo em coluna para telas menores */
+    }
+}
